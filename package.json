@@ -1,0 +1,19 @@
+{
+  "name": "classroombot",
+  "version": "1.0.0",
+  "description": "A classroombot application which could answer or reply to a student's question or expression.",
+  "main": "app.js",
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "usr11011",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-wit": "^5.0.0",
+    "slackbots": "^1.2.0"
+  }
+}
