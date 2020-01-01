@@ -15,17 +15,18 @@
         accessToken: process.env.WITAI_APP_API_TOKEN // access WITAI_APP_API_TOKEN from .env file
     });
     //console.log(CWitai.message("How are you?"));
+    //console.log(process.env.SLACK_APP_API_TOKEN);
     const CSlackBot = new SlackBot({
         token: process.env.SLACK_APP_API_TOKEN,
         name: 'GoodBot' // name of bot that will response to your expression in slack app
     })
-    
-    /*CSlackBot.on('start', function() {
+ 
+    CSlackBot.on('start', function() {
         const params = {
             icon_emoji: ':squirrel:'
         };
         CSlackBot.postMessageToChannel('web-development', 'Hello, Everyone!', params);
-    });*/
+    });
 
     var numPost = 0; // should not response to the message event
     CSlackBot.on('message', function(data) { // keep track when any message event happen in the channel
